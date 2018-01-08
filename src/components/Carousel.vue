@@ -8,7 +8,6 @@
         <img v-lazy="item.img" :alt="item.text">
       </div>
     </agile>
-    <p>hola</p>
   </div>
 </template>
 
