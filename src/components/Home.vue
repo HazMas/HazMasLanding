@@ -1,6 +1,6 @@
 <template>
   <div>
-    <carousel></carousel>
+    <page-header></page-header>
     <form-test></form-test>
     <footer-info></footer-info>
   </div>
@@ -8,14 +8,14 @@
 
 <script>
 
-import Carousel from './Carousel.vue'
+import Header from './Header.vue'
 import FormTest from './FormTest.vue'
 import FooterInfo from './FooterInfo.vue'
 
 export default {
   name: 'home',
   components: {
-    'carousel': Carousel,
+    'page-header': Header,
     'form-test': FormTest,
     'footer-info': FooterInfo
   }
