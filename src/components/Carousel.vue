@@ -1,13 +1,20 @@
 <template>
   <div>
     <agile :arrows="false" :dots="false" :infinite="true" :autoplay="true">
-      <div class="slide slide--1" v-for="item in items">
-        <h3>
-          {{item.text}}
-        </h3>
-        <img v-lazy="item.img" :alt="item.text">
+      <div class="slide slide--1" v-for="item in items" v-lazy="item.img" :alt="item.text">
+        <p>
+          <h2>
+            {{sentence.text}}
+          </h2>
+          <h3>
+            por {{sentence.author}}
+          </h3>
+        </p>
       </div>
     </agile>
+
+    <!-- {{sentece.text}}
+    {{sentece.author}} -->
   </div>
 </template>
 
@@ -18,18 +25,47 @@ export default {
     return {
       items: [
         {
-          'text': 'slide 1',
           'img': 'https://unsplash.com/photos/d3bYmnZ0ank/download'
         },
         {
-          'text': 'slide 2',
           'img': 'https://unsplash.com/photos/YSfTcJZR-ws/download'
         },
         {
-          'text': 'slide 3',
           'img': 'https://unsplash.com/photos/9HI8UJMSdZA/download'
         }
       ]
+    }
+  },
+  computed: {
+    sentence: function () {
+      var sentences = [
+        {
+          'author': 'Lic. Iván Moreno (Docente)',
+          'text': 'Cuando te hayas entrenado para participar, estarás listo para... aprender'
+        },
+        {
+          'author': 'Frank Marshall, ex ajedrecista',
+          'text': 'Un mal plan, es mejor que no tener ningún plan'
+        },
+        {
+          'author': 'Anónimo',
+          'text': 'Poco deporte es mejor que ningún deporte'
+        },
+        {
+          'author': 'Florence Griffith, ex atleta estadounidense.',
+          'text': 'No se fracasa hasta que no se deja de intentar'
+        },
+        {
+          'author': 'Pelé',
+          'text': 'Cuanto más difícil es la victoria, mayor es la felicidad de ganar.'
+        },
+        {
+          'author': 'Michael Jordan',
+          'text': 'Hay que esperar cosas de uno mismo antes de poder hacerlas.'
+        }
+      ]
+
+      return sentences[Math.floor(Math.random() * sentences.length)]
     }
   }
 }
@@ -67,6 +103,17 @@ img{
 }
 
 .slide h3 {
+  font-size: 22px;
+  font-weight: 300;
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+.slide h2 {
   font-size: 32px;
   font-weight: 300;
   left: 50%;
@@ -74,5 +121,6 @@ img{
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
+  color: black;
 }
 </style>

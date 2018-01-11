@@ -6,7 +6,7 @@
           Financiados por:
         </span>
         <a href="http://impulsa.gijon.es">
-          <img src="../assets/logo_gijon_impulsa.png">
+          <img v-lazy="'./assets/logo_gijon_impulsa.png'">
         </a>
       </li>
       <li>
@@ -14,7 +14,7 @@
           Ganadores:
         </span>
         <a href="http://www.elcomercio.es/gijon/proyecto-deporte-compania-20171031002039-ntvo.html">
-          <img src="../assets/logo_startup_weekend.png">
+          <img v-lazy="'./assets/logo_startup_weekend.png'">
         </a>
       </li>
     </ul>

@@ -2,14 +2,14 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import VueAgile from 'vue-agile'
-import VueLazyload from 'vue-lazyload'
+import VueLazyLoader from 'vue-lazy-loader'
 
 import App from './App'
 import router from './router'
 
 Vue.config.productionTip = false
 
-Vue.use(VueLazyload)
+Vue.directive('lazy', VueLazyLoader)
 Vue.use(VueAgile)
 
 /* eslint-disable no-new */
