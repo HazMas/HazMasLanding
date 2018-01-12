@@ -16,14 +16,6 @@ export default {
     sentence: function () {
       var sentences = [
         {
-          'author': 'Lic. Iván Moreno.',
-          'text': 'Cuando te hayas entrenado para participar, estarás listo para... aprender'
-        },
-        {
-          'author': 'Frank Marshall.',
-          'text': 'Un mal plan, es mejor que no tener ningún plan'
-        },
-        {
           'author': 'Anónimo.',
           'text': 'Poco deporte es mejor que ningún deporte'
         },
@@ -32,15 +24,18 @@ export default {
           'text': 'No se fracasa hasta que no se deja de intentar'
         },
         {
-          'author': 'Pelé.',
-          'text': 'Cuanto más difícil es la victoria, mayor es la felicidad de ganar.'
+          'author': 'Proverbio inventado.',
+          'text': 'Si no tienes motivación, siempre encontrarás una forma de no hacer nada'
         },
         {
-          'author': 'Michael Jordan.',
-          'text': 'Hay que esperar cosas de uno mismo antes de poder hacerlas.'
+          'author': 'Babe Ruth.',
+          'text': 'Es difícil superar a una persona que nunca se rinde.'
+        },
+        {
+          'author': 'Wayne Gretzk.',
+          'text': 'Pierdes el 100% de las veces que no lo intentas.'
         }
       ]
-
       return sentences[Math.floor(Math.random() * sentences.length)]
     }
   }

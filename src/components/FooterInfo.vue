@@ -1,23 +1,39 @@
 <template>
-  <footer>
-    <ul>
-      <li>
+  <footer class="container">
+    <ul class="row">
+      <li class="col-xs-12 col-sm-4 text-align-c playfair italic c-secondary title-3">
         <span>
-          Financiados por:
+        Financiados por:
         </span>
         <a href="http://impulsa.gijon.es">
-          <img v-lazy="'./assets/logo_gijon_impulsa.png'">
+          <img src="../assets/logo_gijon_impulsa.png">
         </a>
       </li>
-      <li>
+      <li class="col-xs-12 col-sm-4 text-align-c playfair italic c-secondary title-3">
         <span>
-          Ganadores:
+          Ganadores de:
         </span>
         <a href="http://www.elcomercio.es/gijon/proyecto-deporte-compania-20171031002039-ntvo.html">
-          <img v-lazy="'./assets/logo_startup_weekend.png'">
+          <img src="../assets/logo_startup_weekend.png">
+        </a>
+      </li>
+      <li class="col-xs-12 col-sm-4 text-align-c playfair italic c-secondary title-3">
+        <span>
+          Participantes en:
+        </span>
+        <a href="http://www.elcomercio.es/gijon/proyecto-deporte-compania-20171031002039-ntvo.html">
+          <img v-lazy="'http://yuzz.org.es/wp-content/uploads/2017/11/logo-explorer.png'">
         </a>
       </li>
     </ul>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 text-align-c">
+          <p class="c-primary">
+            <a href="https://www.behance.net/alvaroherrerogarcia">Diseñado</a>  y <a href="https://twitter.com/santima10">programado</a> con <span><img class="icon-xs" src="../assets/icons/heart.png"></span> desde Asturias</p>
+        </div>
+      </div>
+    </div>
   </footer>
 </template>
 
@@ -28,7 +44,8 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss">
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px) !default;
 footer{
   padding: 10px;
 }
@@ -39,7 +56,33 @@ footer img{
 }
 li{
   list-style: none;
-  display: inline;
-  margin-left: 10px;
+}
+.text-align-c {
+  text-align: center;
+}
+.playfair {
+  font-family: "Playfair", serif;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.c-secondary {
+  color: #f93762;
+}
+
+.title-3 {
+  font-size: 18px;
+  @media (min-width: map-get($grid-breakpoints, sm)) {
+    font-size: 22px;
+  }
+  @media (min-width: map-get($grid-breakpoints, md)) {
+    font-size: 28px;
+  }
+}
+
+.icon-xs {
+  width:20px;
 }
 </style>
