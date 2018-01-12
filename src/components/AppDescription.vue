@@ -5,10 +5,56 @@
         <h1 class="x-bold title montserrat c-primary white-space-nw">
           Haz más
         </h1>
-        <div class="flex-in-line">
-          <img class="icon-size-resp padding-r-16" src="../assets/icons/padel.png" alt="padel icon">
-          <p class="title-2 italic x-bold playfair c-secondary">Pádel</p>
-        </div>
+        <agile :arrows="false" :autoplay="true" :dots="false" :autoplaySpeed="1500">
+          <div class="flex-in-line">
+            <img class="icon-size-resp padding-r-16" src="../assets/icons/padel.png" alt="padel icon">
+            <p class="title-2 italic x-bold playfair c-secondary capitalize text-capitalize">pádel</p>
+          </div>
+          <div class="flex-in-line">
+            <img class="icon-size-resp padding-r-16" src="../assets/icons/caminar.png" alt="caminar icon">
+            <p class="title-2 italic x-bold playfair c-secondary capitalize text-capitalize">paseos</p>
+          </div>
+          <div class="flex-in-line">
+            <img class="icon-size-resp padding-r-16" src="../assets/icons/baloncesto.png" alt="baloncesto icon">
+            <p class="title-2 italic x-bold playfair c-secondary capitalize text-capitalize">baloncesto</p>
+          </div>
+          <div class="flex-in-line">
+            <img class="icon-size-resp padding-r-16" src="../assets/icons/futbol.png" alt="futbol icon">
+            <p class="title-2 italic x-bold playfair c-secondary capitalize text-capitalize">fútbol</p>
+          </div>
+          <div class="flex-in-line">
+            <img class="icon-size-resp padding-r-16" src="../assets/icons/correr.png" alt="correr icon">
+            <p class="title-2 italic x-bold playfair c-secondary capitalize text-capitalize">carreras</p>
+          </div>
+          <div class="flex-in-line">
+            <img class="icon-size-resp padding-r-16" src="../assets/icons/skating.png" alt="skating icon">
+            <p class="title-2 italic x-bold playfair c-secondary capitalize text-capitalize">skating</p>
+          </div>
+          <div class="flex-in-line">
+            <img class="icon-size-resp padding-r-16" src="../assets/icons/billar.png" alt="billar icon">
+            <p class="title-2 italic x-bold playfair c-secondary capitalize text-capitalize">billar</p>
+          </div>
+          <div class="flex-in-line">
+            <img class="icon-size-resp padding-r-16" src="../assets/icons/bolos.png" alt="bolos icon">
+            <p class="title-2 italic x-bold playfair c-secondary capitalize text-capitalize">bolos</p>
+          </div>
+          <div class="flex-in-line">
+            <img class="icon-size-resp padding-r-16" src="../assets/icons/surf.png" alt="surf icon">
+            <p class="title-2 italic x-bold playfair c-secondary capitalize text-capitalize">surf</p>
+          </div>
+          <div class="flex-in-line">
+            <img class="icon-size-resp padding-r-16" src="../assets/icons/tenis.png" alt="tenis icon">
+            <p class="title-2 italic x-bold playfair c-secondary capitalize text-capitalize">tenis</p>
+          </div>
+          <div class="flex-in-line">
+            <img class="icon-size-resp padding-r-16" src="../assets/icons/billar.png" alt="billar icon">
+            <p class="title-2 italic x-bold playfair c-secondary capitalize text-capitalize">billar</p>
+          </div>
+          <div class="flex-in-line">
+            <img class="icon-size-resp padding-r-16" src="../assets/icons/tenis.png" alt="tenis icon">
+            <p class="title-2 italic x-bold playfair c-secondary capitalize text-capitalize">tenis</p>
+          </div>
+        </agile>
         <p class="p-s-resp c-primary montserrat light">“Haz más” Proyecto que nació tras ganar el primer <span class="bold c-secondary">Startup Weekend de Gijón</span>. Empezó como una propuesta sencilla: </p>
         <p class="p-s-resp italic c-primary playfair">“Encuentra a gente en tu ciudad para practicar deporte a través de una app móvil”.</p>
         <div class="row">
@@ -263,5 +309,9 @@ $grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px) !default
 
 .width-0100 {
   width: 100%
+}
+
+.text-capitalize{
+  text-transform: capitalize;
 }
 </style>
