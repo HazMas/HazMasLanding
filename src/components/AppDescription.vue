@@ -210,7 +210,7 @@ $grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px) !default
   }
 }
 .flex-in-line {
-  display: flex;
+  display: flex !important;
   align-items: center;
 }
 
