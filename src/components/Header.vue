@@ -1,11 +1,11 @@
 <template>
   <div class="bg-header">
-    <h2>
+    <p class="sentence">
       {{sentence.text}}
-    </h2>
-    <h3>
+    </p>
+    <p class="author">
       — {{sentence.author}}
-    </h3>
+    </p>
   </div>
 </template>
 
@@ -51,15 +51,13 @@ export default {
 <style lang="scss">
 
 $grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px
-) !default;
-@media (min-width: map-get($grid-breakpoints, sm)) { }
-
-
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+  ) !default;
+  
 .bg-header {
   width: 100%;
   height: 100vh;
@@ -71,7 +69,7 @@ $grid-breakpoints: (
 
 
 
- h3 {
+ p.author {
   font-size: 18px;
   font-weight: 700;
   font-family: 'Montserrat', sans-serif;
@@ -88,7 +86,7 @@ $grid-breakpoints: (
    }
 }
 
- h2 {
+ p.sentence {
   font-size: 16px;
   font-weight: 700;
   font-family: 'Playfair Display', serif;
