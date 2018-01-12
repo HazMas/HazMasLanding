@@ -27,9 +27,9 @@
       </li>
 
       <div class="col-xs-12 width-0100 text-align-c">
-          <a  target="_blank" href="https://www.facebook.com/hazmasapp"><img class="icon-xs margin-30" src="../assets/icons/facebook.svg" alt="facebook"></a>
-          <a  target="_blank" href="https://www.instagram.com/hazmasapp"><img class="icon-xs margin-30" src="../assets/icons/instagram.svg" alt="instagram"></a>
-          <a  target="_blank" href="https://twitter.com/HazMasapp"><img class="icon-xs margin-30" src="../assets/icons/twitter.svg" alt="twitter"></a>
+          <a v-on:click="gaSocialTracking('facebook')" target="_blank" href="https://www.facebook.com/hazmasapp"><img class="icon-xs margin-30" src="../assets/icons/facebook.svg" alt="facebook"></a>
+          <a v-on:click="gaSocialTracking('instagram')" target="_blank" href="https://www.instagram.com/hazmasapp"><img class="icon-xs margin-30" src="../assets/icons/instagram.svg" alt="instagram"></a>
+          <a v-on:click="gaSocialTracking('twitter')" target="_blank" href="https://twitter.com/HazMasapp"><img class="icon-xs margin-30" src="../assets/icons/twitter.svg" alt="twitter"></a>
       </div>
     </ul>
     <div class="container-fluid">
@@ -45,7 +45,12 @@
 
 <script>
 export default {
-  name: 'footer-info'
+  name: 'footer-info',
+  method: {
+    gaSocialTracking: function (socialNetwork) {
+      this.$ga.event('Redes sociales', 'click', socialNetwork, 1)
+    }
+  }
 }
 </script>
 
