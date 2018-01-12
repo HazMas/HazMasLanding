@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: 'header',
+  name: 'web-header',
   computed: {
     sentence: function () {
       var sentences = [
@@ -52,14 +52,14 @@ $grid-breakpoints: (
     lg: 992px,
     xl: 1200px
   ) !default;
-  
+
 .bg-header {
   width: 100%;
   height: 100vh;
   background-size: cover;
   background-image: url('../assets/bg-header.jpg');
   background-position: center center;
-  
+
 }
 
 
