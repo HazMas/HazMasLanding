@@ -25,6 +25,12 @@
           <img v-lazy="'http://yuzz.org.es/wp-content/uploads/2017/11/logo-explorer.png'">
         </a>
       </li>
+
+      <div class="col-xs-12 width-0100 text-align-c">
+          <a  target="_blank" href="https://www.facebook.com/hazmasapp"><img class="icon-xs margin-30" src="../assets/icons/facebook.svg" alt="facebook"></a>
+          <a  target="_blank" href="https://www.instagram.com/hazmasapp"><img class="icon-xs margin-30" src="../assets/icons/instagram.svg" alt="instagram"></a>
+          <a  target="_blank" href="https://twitter.com/HazMasapp"><img class="icon-xs margin-30" src="../assets/icons/twitter.svg" alt="twitter"></a>
+      </div>
     </ul>
     <div class="container-fluid">
       <div class="row">
@@ -82,7 +88,11 @@ li{
   }
 }
 
+.margin-30{
+  margin: 30px;
+}
 .icon-xs {
   width:20px;
+  max-height: 20px;
 }
 </style>
