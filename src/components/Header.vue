@@ -1,11 +1,15 @@
 <template>
-  <div class="bg-header">
-    <p class="sentence">
-      {{sentence.text}}
-    </p>
-    <p class="author">
-      — {{sentence.author}}
-    </p>
+  <div class="bg-header container height-100vh position-r">
+    <div class="row height-100vh">
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 vertical-center position-r">
+        <p class="sentence">
+          {{sentence.text}}
+        </p>
+        <p class="author">
+          — {{sentence.author}}
+        </p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -62,19 +66,25 @@ $grid-breakpoints: (
 
 }
 
+.height-100vh {
+  height: 100vh;
+}
 
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
+.position-r {
+  position: relative;
+}
  p.author {
   font-size: 18px;
   font-weight: 700;
   font-family: 'Montserrat', sans-serif;
   text-align: right;
-  width: 70%;
-  left: 50%;
   margin: 0;
-  position: absolute;
-  top: 55%;
-  transform: translate(-50%, -50%);
   color: black;
   @media (min-width: map-get($grid-breakpoints, sm)) {
     font-size: 20px;
@@ -84,14 +94,11 @@ $grid-breakpoints: (
  p.sentence {
   font-size: 16px;
   font-weight: 700;
+  padding-bottom: 30px;
   font-family: 'Playfair Display', serif;
   font-style: italic;
   text-align: center;
-  left: 50%;
   margin: 0;
-  position: absolute;
-  top: 45%;
-  transform: translate(-50%, -50%);
   color: black;
   @media (min-width: map-get($grid-breakpoints, sm)) {
     font-size: 18px;
