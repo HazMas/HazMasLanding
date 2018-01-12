@@ -65,7 +65,7 @@
             <a v-on:click="gaNewsTracking('rtpa')" class="padding-16 display-ib" target="_blank" href="http://www.rtpa.es/asturias:Convertir-una-idea-en-una-empresa-que-resuelva-las-necesidades-ciudadanas_111509302781.html"><img class="width-0100" v-lazy="'http://media.tvalacarta.info/canales/256x256/rtpa.png'" alt="RTPA"></a>
           </div>
           <div class="col-xs-6">
-            <a v-on:click="gaNewsTracking('lne')" class="padding-16 display-ib" target="_blank" href="http://www.lne.es/economia/2017/11/05/aplicaciones-ponerse-correr/2188255.html"><img class="width-0100" v-lazy="'https://mas.lne.es/portadas/img/lanuevaespana.png?aaa'" alt="La nueva españa"></a>
+            <a v-on:click="gaNewsTracking('lne')" class="padding-16 display-ib" target="_blank" href="http://www.lne.es/economia/2017/11/05/aplicaciones-ponerse-correr/2188255.html"><img class="width-0100" src="../assets/icons/lanuevaespana.png" alt="La nueva españa"></a>
           </div>
           <div class="col-xs-6">
             <a v-on:click="gaNewsTracking('elcomercio')" class="padding-16 display-ib" target="_blank" href="http://www.elcomercio.es/gijon/proyecto-deporte-compania-20171031002039-ntvo.html"><img class="width-0100" v-lazy="'http://static1.elcomercio.es/squido/latest/assets/images/elcomercio.svg'" alt="El comercio"></a>
