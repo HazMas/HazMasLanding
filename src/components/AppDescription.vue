@@ -18,21 +18,28 @@
         <div class="row">
           <div class="col-xs-6">
             <a v-on:click="gaNewsTracking('SWAsturias')" class="padding-16 display-ib" target="_blank" href="https://twitter.com/SWAsturias/status/924687764645470208">
-            <img class="width-0100" v-lazy="'https://pbs.twimg.com/media/DMR6vHqX4AADjnw.png'" alt="Twitter"></a>
+              <img class="width-0100" v-lazy="require('../assets/logos/logo_startup_weekend.png')" alt="Twitter">
+            </a>
           </div>
           <div class="col-xs-6">
-            <a v-on:click="gaNewsTracking('rtpa')" class="padding-16 display-ib" target="_blank" href="http://www.rtpa.es/asturias:Convertir-una-idea-en-una-empresa-que-resuelva-las-necesidades-ciudadanas_111509302781.html"><img class="width-0100" v-lazy="'http://media.tvalacarta.info/canales/256x256/rtpa.png'" alt="RTPA"></a>
+            <a v-on:click="gaNewsTracking('rtpa')" class="padding-16 display-ib" target="_blank" href="http://www.rtpa.es/asturias:Convertir-una-idea-en-una-empresa-que-resuelva-las-necesidades-ciudadanas_111509302781.html">
+              <img class="width-0100" v-lazy="require('../assets/logos/logo_rtpa.png')" alt="RTPA">
+            </a>
           </div>
           <div class="col-xs-6">
-            <a v-on:click="gaNewsTracking('lne')" class="padding-16 display-ib" target="_blank" href="http://www.lne.es/economia/2017/11/05/aplicaciones-ponerse-correr/2188255.html"><img class="width-0100" v-lazy="require('../assets/icons/lanuevaespana.png')" alt="La nueva españa"></a>
+            <a v-on:click="gaNewsTracking('lne')" class="padding-16 display-ib" target="_blank" href="http://www.lne.es/economia/2017/11/05/aplicaciones-ponerse-correr/2188255.html">
+              <img class="width-0100" v-lazy="require('../assets/logos/logo_lanuevaespana.png')" alt="La nueva españa">
+            </a>
           </div>
           <div class="col-xs-6">
-            <a v-on:click="gaNewsTracking('elcomercio')" class="padding-16 display-ib" target="_blank" href="http://www.elcomercio.es/gijon/proyecto-deporte-compania-20171031002039-ntvo.html"><img class="width-0100" v-lazy="'http://static1.elcomercio.es/squido/latest/assets/images/elcomercio.svg'" alt="El comercio"></a>
+            <a v-on:click="gaNewsTracking('elcomercio')" class="padding-16 display-ib" target="_blank" href="http://www.elcomercio.es/gijon/proyecto-deporte-compania-20171031002039-ntvo.html">
+              <img class="width-0100" v-lazy="require('../assets/logos/logo_elcomercio.svg')" alt="El comercio">
+            </a>
           </div>
         </div>
       </div>
       <div class="col-xs-12 col-md-6 text-align-c">
-        <img class="margin-0-auto" src="../assets/icons/vista-app-1.png" alt="vista de la app">
+        <img class="margin-0-auto" v-lazy="require('../assets/vista-app-haz-mas.png')" alt="vista de la app">
       </div>
      </div>
   </div>

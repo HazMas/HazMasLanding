@@ -6,30 +6,35 @@
         Financiados por:
         </span>
         <a href="http://impulsa.gijon.es">
-          <img src="../assets/logo_gijon_impulsa.png">
+          <img v-lazy="require('../assets/logos/logo_gijon_impulsa.png')">
         </a>
       </li>
       <li class="col-xs-12 col-sm-4 text-align-c playfair italic c-secondary title-3">
         <span>
           Ganadores de:
         </span>
-        <a href="http://www.elcomercio.es/gijon/proyecto-deporte-compania-20171031002039-ntvo.html">
-          <img src="../assets/logo_startup_weekend.png">
+        <a href="#">
+          <img v-lazy="require('../assets/logos/logo_startup_weekend.png')">
         </a>
       </li>
       <li class="col-xs-12 col-sm-4 text-align-c playfair italic c-secondary title-3">
         <span>
           Participantes en:
         </span>
-        <a href="http://www.elcomercio.es/gijon/proyecto-deporte-compania-20171031002039-ntvo.html">
-          <img v-lazy="'http://yuzz.org.es/wp-content/uploads/2017/11/logo-explorer.png'">
+        <a href="#">
+          <img v-lazy="require('../assets/logos/logo_explorer.png')">
         </a>
       </li>
-
       <div class="col-xs-12 width-0100 text-align-c">
-          <a v-on:click="gaSocialTracking('facebook')" target="_blank" href="https://www.facebook.com/hazmasapp"><img class="icon-xs margin-30" src="../assets/icons/facebook.svg" alt="facebook"></a>
-          <a v-on:click="gaSocialTracking('instagram')" target="_blank" href="https://www.instagram.com/hazmasapp"><img class="icon-xs margin-30" src="../assets/icons/instagram.svg" alt="instagram"></a>
-          <a v-on:click="gaSocialTracking('twitter')" target="_blank" href="https://twitter.com/HazMasapp"><img class="icon-xs margin-30" src="../assets/icons/twitter.svg" alt="twitter"></a>
+          <a v-on:click="gaSocialTracking('facebook')" target="_blank" href="https://www.facebook.com/hazmasapp">
+            <img class="icon-xs margin-30" v-lazy="require('../assets/icons/facebook.svg')" alt="facebook">
+          </a>
+          <a v-on:click="gaSocialTracking('instagram')" target="_blank" href="https://www.instagram.com/hazmasapp">
+            <img class="icon-xs margin-30" v-lazy="require('../assets/icons/instagram.svg')" alt="instagram">
+          </a>
+          <a v-on:click="gaSocialTracking('twitter')" target="_blank" href="https://twitter.com/HazMasapp">
+            <img class="icon-xs margin-30" v-lazy="require('../assets/icons/twitter.svg')" alt="twitter">
+          </a>
       </div>
     </ul>
     <div class="container-fluid">
