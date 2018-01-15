@@ -1,6 +1,6 @@
 <template>
   <footer class="container">
-    <ul class="row">
+    <ul class="row padding-0">
       <li class="col-xs-12 col-sm-4 text-align-c playfair italic c-secondary title-3">
         <span>
         Financiados por:
@@ -92,7 +92,9 @@ li{
     font-size: 28px;
   }
 }
-
+.padding-0{
+  padding:0;
+}
 .margin-30{
   margin: 30px;
 }
