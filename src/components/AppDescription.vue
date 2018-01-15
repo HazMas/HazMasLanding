@@ -5,7 +5,7 @@
         <h1 class="x-bold title montserrat c-primary white-space-nw">
           Haz más
         </h1>
-        <agile :arrows="false" :autoplay="true" :dots="false" :autoplaySpeed="1000">
+        <agile :arrows="false" :autoplay="true" :dots="false" :autoplaySpeed="1500">
           <div class="flex-in-line">
             <img class="icon-size-resp padding-r-16" src="../assets/icons/padel.png" alt="padel icon">
             <p class="title-2 italic x-bold playfair c-secondary capitalize text-capitalize">pádel</p>
