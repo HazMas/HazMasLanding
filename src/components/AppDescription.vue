@@ -7,7 +7,7 @@
         </h1>
         <agile :arrows="false" :autoplay="true" :dots="false" :autoplaySpeed="1500">
           <div class="flex-in-line" v-for="sport in sports" :key="sport.slug">
-            <img class="icon-size-resp padding-r-16" v-bind:src="require('../assets/icons/' + sport.slug + '.png')" v-bind:alt="sport.text + ' icon'">
+            <img class="icon-size-resp padding-r-16" v-bind:v-lazy="require('../assets/icons/' + sport.slug + '.png')" v-bind:alt="sport.text + ' icon'">
             <p class="title-2 italic x-bold playfair c-secondary capitalize text-capitalize">
               {{sport.text}}
             </p>
