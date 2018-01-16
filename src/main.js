@@ -8,10 +8,6 @@ import VueAnalytics from 'vue-analytics'
 import App from './App'
 import router from './router'
 
-Vue.use(VueAnalytics, {
-  id: 'UA-XXX-X'
-})
-
 Vue.config.productionTip = false
 
 Vue.directive('lazy', VueLazyLoader)
