@@ -8,15 +8,18 @@ import VueAnalytics from 'vue-analytics'
 import App from './App'
 import router from './router'
 
-Vue.config.productionTip = false
+Vue.config.productionTip = process.env.NODE_ENV === 'production'
 
 Vue.directive('lazy', VueLazyLoader)
 Vue.use(VueAgile)
 
-Vue.use(VueAnalytics, {
-  id: 'UA-109251415-1',
-  checkDuplicatedScript: true
-})
+if (Vue.config.productionTip) {
+  // Google Analytics //
+  Vue.use(VueAnalytics, {
+    id: 'UA-109251415-1',
+    checkDuplicatedScript: true
+  })
+}
 
 /* eslint-disable no-new */
 new Vue({
